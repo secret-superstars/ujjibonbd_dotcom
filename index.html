@@ -1,0 +1,1192 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional guidance to help you make informed career decisions and achieve your professional goals.">
+    <meta name="author-info" content="@faysal_ahmed">
+    <title>Ujjibon - Your Career Counseling Partner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="loader-container">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <p>Loading your career journey...</p>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="logo"> 
+                <img src="UJJIBON Official Logo (black).png" alt="Ujjibon Logo">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="course/index.html" target="_blank">Courses</a></li>
+                    <li><a href="#assessment">Assessment</a></li>
+                    <li><a href="ai model/index.html">CareerAI</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate-text">Discover Your <span>Perfect Career Path</span></h1>
+                <p>Professional guidance to help you make informed career decisions and achieve your professional goals.</p>
+                <div class="cta-buttons">
+                    <a href="#assessment" class="btn primary-btn">Take Assessment</a>
+                    <a href="#contact" class="btn secondary-btn">Book Consultation</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <video src="ujjibon intro.mp4" autoplay loop muted controls style="border-radius: 24px;"> </video>
+            </div>
+        </div>
+        <div class="wave-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span>Services</span></h2>
+                <p>Comprehensive career guidance tailored to your needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Career Assessment</h3>
+                    <p>Discover your strengths, interests, and aptitudes through our scientifically validated assessment tools.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>One-on-One Counseling</h3>
+                    <p>Personalized guidance sessions with experienced career counselors to help you navigate your career path.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Resume Building</h3>
+                    <p>Expert assistance in creating impactful resumes that highlight your skills and experiences effectively.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Interview Preparation</h3>
+                    <p>Comprehensive interview coaching to help you present yourself confidently and professionally.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Education Planning</h3>
+                    <p>Guidance on selecting the right educational path aligned with your career goals and aspirations.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Career Advancement</h3>
+                    <p>Strategic advice for professionals looking to progress in their current career or transition to a new field.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="assessment" class="assessment">
+        <div class="container">
+            <div class="section-header">
+                <h2>Career <span>Assessment</span></h2>
+                <p>Discover your ideal career path with our interactive assessment tool</p>
+            </div>
+            <div class="assessment-container">
+                <div class="assessment-intro active" id="assessment-intro">
+                    <h3>Find Your Career Match</h3>
+                    <p>Answer a series of questions to help us understand your interests, skills, and preferences. This will take approximately 5-7 minutes to complete.</p>
+                    <button id="start-assessment" class="btn primary-btn">Start Assessment</button>
+                </div>
+                <div class="assessment-questions" id="assessment-questions">
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="question-container">
+                        <h3 id="question-text">Question text will appear here</h3>
+                        <div class="options-container" id="options-container"> 
+                        </div>
+                    </div>
+                    <div class="assessment-navigation">
+                        <button id="prev-question" class="btn secondary-btn" disabled>Previous</button>
+                        <button id="next-question" class="btn primary-btn" disabled>Next</button>
+                    </div>
+                </div>
+                <div class="assessment-results" id="assessment-results">
+                    <h3>Your Career Assessment Results</h3>
+                    <div class="results-container">
+                        <div class="result-chart-container">
+                            <canvas id="result-chart"></canvas>
+                        </div>
+                        <div class="top-careers">
+                            <h4>Top Career Matches</h4>
+                            <ul id="career-matches">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="result-description" id="result-description">
+                    </div>
+                    <div class="result-actions">
+                        <button id="download-results" class="btn secondary-btn">Download Results</button>
+                        <button id="book-consultation" class="btn primary-btn">Book a Consultation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="wapper">
+    <div class="section-header">
+      <h2>Ujjibon <span>Signature Events</span></h2>
+      <p>Discover and book amazing events happening near you</p>
+    </div>
+
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search our past events...">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-icon"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+    </div>
+
+    <div class="events-container" id="eventsContainer"></div>
+  </div>
+
+  <div class="modal" id="eventModal">
+    <div class="modal-content">
+      <button class="close-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+<section id="partners" class="partners">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our <span>Trusted Partners</span></h2>
+            <p>We collaborate with leading companies to provide you with the best career guidance</p>
+        </div>
+
+        <div id="app">
+            <div>
+                <div class="partners-grid">
+                  <div class="partner-card" data-aos="fade-up">
+                    <img src="https://startupvalencia.org/wp-content/uploads/2023/09/sv_partners-23_google-square-1.png" alt="Google for Startups" />
+                    <h3>Google for Startups</h3>
+                    <p>Leading innovation in technology</p>
+                  </div>
+                  <div class="partner-card" data-aos="fade-up">
+                    <img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa76b7ceb-cf45-4175-8bf7-3d0188424317_1200x1200.jpeg" alt="Tokyo Metropolitan Government" />
+                    <h3>Tokyo Metropolitan Government</h3>
+                    <p>Government office</p>
+                  </div>
+                  <div class="partner-card" data-aos="fade-up">
+                    <img src="https://yt3.googleusercontent.com/P4kfRmyG8u43M4HpIY-V-ym7A8cw5q4J0aRzGZnJ4irV6x09SEo51cuuZXqzgwUw9ltNtSxt_A=s900-c-k-c0x00ffffff-no-rj" alt="SusHi Tech Tokyo 2025" />
+                    <h3>SusHi Tech Tokyo 2025</h3>
+                    <p>Asia's Largest Startup Conferences</p>
+                  </div>
+                  <div class="partner-card" data-aos="fade-up">
+                    <img src="https://seeklogo.com/images/I/ict-division-future-is-here-logo-512CF19AA7-seeklogo.com.png" alt="Bangladesh ICT Division" />
+                    <h3>Bangladesh ICT Division</h3>
+                    <p>Government Division</p>
+                  </div>
+                  <div class="partner-card" data-aos="fade-up">
+                      <img src="https://media.licdn.com/dms/image/v2/C560BAQEXQwpu-pEVrQ/company-logo_200_200/company-logo_200_200/0/1633688763637/idea_bangladesh_logo?e=2147483647&v=beta&t=HbwryD2oTj9lsyiXaR9JN2HYRvZ9WpCj0xb_rXa_mxA" alt="iDEA Innovations" />
+                      <h3>iDEA Innovations</h3>
+                      <p>Government Project</p>
+                  </div>
+                  <div class="partner-card" data-aos="fade-up">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnoi-KJkGTgj7B29VOnSkxfWw3lRhLkoUKEg&s" alt="Bangladesh Youth Leadership Center" />
+                      <h3>Bangladesh Youth Leadership Center</h3>
+                      <p>Online Learning Academy</p>
+                  </div>
+                  <div class="partner-card" data-aos="fade-up">
+                    <img src="https://yt3.googleusercontent.com/ytc/AIdro_kmsjs7L9AOWOUX-vhwVh3Ody05f6C9rrjcSTkAFsbDGg=s900-c-k-c0x00ffffff-no-rj" alt="Business Inspection BD" />
+                    <h3>Business Inspection BD</h3>
+                    <p>Digital Media Platform</p>
+                </div>
+                <div class="partner-card" data-aos="fade-up">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDTLgTvu-g88mJWdoHQvy3Vzk7jmbHfWfxtA&s" alt="BUET Career Club" />
+                    <h3>BUET Career Club</h3>
+                    <p>Make BUETians, to be more Careerist</p>
+                </div>
+                </div>
+              </section>
+            </div>
+        </div>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Client <span>Testimonials</span></h2>
+                <p>What our clients say about our career counseling services</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The career assessment was eye-opening. It helped me understand my strengths and guided me toward a career path I hadn't considered before but absolutely love now."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Faysal Ahmed">
+                            <div class="author-info">
+                                <h4>Faysal Ahmed</h4>
+                                <p>Product Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"After feeling stuck in my career for years, the counseling sessions gave me clarity and confidence to make a change. The personalized guidance was invaluable."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Farhana Pritti">
+                            <div class="author-info">
+                                <h4>Farhana Pritti</h4>
+                                <p>Software Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The resume building service transformed my job search. Within weeks of updating my resume, I received multiple interview calls from top companies in my industry."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Farhan Morshed">
+                            <div class="author-info">
+                                <h4>Farhan Morshed</h4>
+                                <p>Financial Analyst</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The interview preparation was thorough and practical. The mock interviews helped me identify my weaknesses and work on them. I aced my dream job interview!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Fariha Ahmed">
+                            <div class="author-info">
+                                <h4>Fariha Ahmed</h4>
+                                <p>Project Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="contact" class="cta-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Ready to Transform <span>Your Career</span>?</h2>
+            <p>Schedule a free 15-minute consultation with our career experts</p>
+        </div>
+
+        <div class="cta-container">
+            <div class="cta-info">
+                <div class="cta-header">
+                    <i class="fas fa-calendar"></i>
+                    <h3>Book Your Consultation</h3>
+                </div>
+                <p>Our career counselors are ready to help you navigate your professional journey. Fill out the form and we'll get back to you within 24 hours to schedule your free consultation.</p>
+                
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <p>Complete the contact form</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <p>Schedule your free consultation</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <p>Begin your career transformation</p>
+                    </div>
+                </div>
+
+                <div class="cta-features">
+                    <h4>What's included in your free consultation:</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Initial career assessment</li>
+                        <li><i class="fas fa-check"></i> Personalized service recommendations</li>
+                        <li><i class="fas fa-check"></i> Custom action plan preview</li>
+                        <li><i class="fas fa-check"></i> Q&A with a career expert</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cta-form">
+                <form id="consultationForm" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="ef446b67-e701-4383-9939-9a0f06f91e1a">
+
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="form-error" id="nameError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="form-error" id="emailError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                        <span class="form-error" id="phoneError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Service Interested In</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="career-assessment">Career Assessment</option>
+                            <option value="resume-building">Resume Building</option>
+                            <option value="interview-preparation">Interview Preparation</option>
+                            <option value="career-transition">Career Transition</option>
+                            <option value="education-planning">Education Planning</option>
+                            <option value="ongoing-coaching">Ongoing Coaching</option>
+                            <option value="networking-strategy">Networking Strategy</option>
+                            <option value="salary-negotiation">Salary Negotiation</option>
+                        </select>
+                        <span class="form-error" id="serviceError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experience">Your Available Time For The Consultation</label>
+                        <div class="range-slider-container">
+                            <input type="datetime-local" id="experience" name="experience" class="range-slider" required>
+                            <span class="range-value" id="experienceValue">15-min</span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Career Goals (Optional)</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter" checked>
+                        <label for="newsletter">Subscribe to our career newsletter</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">Request Consultation</button>
+                </form>
+
+                <div id="formSuccess" class="form-success">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Thank You!</h3>
+                    <p>Your consultation request has been submitted. We'll contact you within 24 hours to schedule your session.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in <span>Touch</span></h2>
+                <p>Schedule a consultation or send us your inquiries</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Our Location</h3>
+                            <p>Google for Startups, Shibuya, Tokyo, Japan</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p>ujjibonofficial@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>+880 1799685901</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Working Hours</h3>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="consultation-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="ef446b67-e701-4383-9939-9a0f06f91e1a">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="career-assessment">Career Assessment</option>
+                                <option value="counseling">One-on-One Counseling</option>
+                                <option value="resume">Resume Building</option>
+                                <option value="interview">Interview Preparation</option>
+                                <option value="education">Education Planning</option>
+                                <option value="advancement">Career Advancement</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="popup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <button id="close-popup" class="close-popup">&times;</button>
+            <video src="pop up.mp4" class="popup-video" autoplay muted loop></video>
+            <h2>Welcome to Our Website!</h2>
+            <p>Use The First Career GPT of South Asia, Navigate Your Pathway Now.</p>
+            <button id="go-to-ai" class="btn primary-btn2">GO TO GPT</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo"> 
+                        <img src="UJJIBON Official Logo (white).png" alt="Ujjibon Logo">
+                    </div>
+                    <p>Your partner in professional growth and career development.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/ujjibonofficial" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/ujjibonofficial" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/ujjibon-%E0%A6%89%E0%A6%9C%E0%A7%8D%E0%A6%9C%E0%A7%80%E0%A6%AC%E0%A6%A8/?viewAsMember=true" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/ujjibon_official"><i class="fab fa-instagram" target="_blank"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="course/index.html" target="_blank">Courses</a></li>
+                        <li><a href="#assessment">Assessment</a></li>
+                        <li><a href="ai model/index.html">CareerAI</a></li>
+                        <li><a href="https://www.linkedin.com/in/faysal-ahmed-a7a62925b/" target="_blank">Developers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#services">Career Assessment</a></li>
+                        <li><a href="#services">One-on-One Counseling</a></li>
+                        <li><a href="#services">Resume Building</a></li>
+                        <li><a href="#services">Interview Preparation</a></li>
+                        <li><a href="#services">Education Planning</a></li>
+                        <li><a href="#services">Career Advancement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <p>Stay updated with our latest career tips and opportunities.</p>
+                    <form id="newsletter-form" action="" method="POST">
+                        <input type="hidden" name="access_key" value="">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn primary-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ujjibon. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <div class="chat-bot">
+        <div class="chat-bot-toggle">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="chat-bot-container">
+            <div class="chat-bot-header">
+                <h3>Career Assistant</h3>
+                <button class="close-chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-bot-messages" id="chat-messages">
+                <div class="message bot">
+                    <div class="message-content">
+                        <p>Hello! I'm your Career Assistant. How can I help you today?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-bot-input">
+                <input type="text" id="chat-input" placeholder="Type your question here...">
+                <button id="send-message"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+<!--last updated 23 March 11.45 PM-->
+<!-- <!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional guidance to help you make informed career decisions and achieve your professional goals.">
+    <meta name="author-info" content="@faysal_ahmed">
+    <title>Ujjibon - Your Career Counseling Partner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="loader-container">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <p>Loading your career journey...</p>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="logo"> 
+                <img src="UJJIBON Official Logo (black).png" alt="Ujjibon Logo">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="www.facebook.com" target="_blank">Courses</a></li>
+                    <li><a href="#assessment">Assessment</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate-text">Discover Your <span>Perfect Career Path</span></h1>
+                <p>Professional guidance to help you make informed career decisions and achieve your professional goals.</p>
+                <div class="cta-buttons">
+                    <a href="#assessment" class="btn primary-btn">Take Assessment</a>
+                    <a href="#contact" class="btn secondary-btn">Book Consultation</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80" alt="Career Counseling">
+            </div>
+        </div>
+        <div class="wave-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span>Services</span></h2>
+                <p>Comprehensive career guidance tailored to your needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Career Assessment</h3>
+                    <p>Discover your strengths, interests, and aptitudes through our scientifically validated assessment tools.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>One-on-One Counseling</h3>
+                    <p>Personalized guidance sessions with experienced career counselors to help you navigate your career path.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Resume Building</h3>
+                    <p>Expert assistance in creating impactful resumes that highlight your skills and experiences effectively.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Interview Preparation</h3>
+                    <p>Comprehensive interview coaching to help you present yourself confidently and professionally.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Education Planning</h3>
+                    <p>Guidance on selecting the right educational path aligned with your career goals and aspirations.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Career Advancement</h3>
+                    <p>Strategic advice for professionals looking to progress in their current career or transition to a new field.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="assessment" class="assessment">
+        <div class="container">
+            <div class="section-header">
+                <h2>Career <span>Assessment</span></h2>
+                <p>Discover your ideal career path with our interactive assessment tool</p>
+            </div>
+            <div class="assessment-container">
+                <div class="assessment-intro active" id="assessment-intro">
+                    <h3>Find Your Career Match</h3>
+                    <p>Answer a series of questions to help us understand your interests, skills, and preferences. This will take approximately 5-7 minutes to complete.</p>
+                    <button id="start-assessment" class="btn primary-btn">Start Assessment</button>
+                </div>
+                <div class="assessment-questions" id="assessment-questions">
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="question-container">
+                        <h3 id="question-text">Question text will appear here</h3>
+                        <div class="options-container" id="options-container"> 
+                        </div>
+                    </div>
+                    <div class="assessment-navigation">
+                        <button id="prev-question" class="btn secondary-btn" disabled>Previous</button>
+                        <button id="next-question" class="btn primary-btn" disabled>Next</button>
+                    </div>
+                </div>
+                <div class="assessment-results" id="assessment-results">
+                    <h3>Your Career Assessment Results</h3>
+                    <div class="results-container">
+                        <div class="result-chart-container">
+                            <canvas id="result-chart"></canvas>
+                        </div>
+                        <div class="top-careers">
+                            <h4>Top Career Matches</h4>
+                            <ul id="career-matches">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="result-description" id="result-description">
+                    </div>
+                    <div class="result-actions">
+                        <button id="download-results" class="btn secondary-btn">Download Results</button>
+                        <button id="book-consultation" class="btn primary-btn">Book a Consultation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="wapper">
+    <div class="section-header">
+      <h2>Ujjibon <span>Signature Events</span></h2>
+      <p>Discover and book amazing events happening near you</p>
+    </div>
+
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search our past events...">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-icon"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+    </div>
+
+    <div class="events-container" id="eventsContainer"></div>
+  </div>
+
+  <div class="modal" id="eventModal">
+    <div class="modal-content">
+      <button class="close-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+<section id="partners" class="partners">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our <span>Trusted Partners</span></h2>
+            <p>We collaborate with leading companies to provide you with the best career guidance</p>
+        </div>
+
+        <div id="app">
+            <div>
+                <div class="partners-grid">
+                  <div class="partner-card" data-aos="fade-up">
+                    <img src="https://startupvalencia.org/wp-content/uploads/2023/09/sv_partners-23_google-square-1.png" alt="Google for Startups" />
+                    <h3>Google for Startups</h3>
+                    <p>Leading innovation in technology</p>
+                  </div>
+                  <div class="partner-card" data-aos="fade-up">
+                    <img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa76b7ceb-cf45-4175-8bf7-3d0188424317_1200x1200.jpeg" alt="Tokyo Metropolitan Government" />
+                    <h3>Tokyo Metropolitan Government</h3>
+                    <p>Government office</p>
+                  </div>
+                  <div class="partner-card" data-aos="fade-up">
+                    <img src="https://yt3.googleusercontent.com/P4kfRmyG8u43M4HpIY-V-ym7A8cw5q4J0aRzGZnJ4irV6x09SEo51cuuZXqzgwUw9ltNtSxt_A=s900-c-k-c0x00ffffff-no-rj" alt="SusHi Tech Tokyo 2025" />
+                    <h3>SusHi Tech Tokyo 2025</h3>
+                    <p>Asia's Largest Startup Conferences</p>
+                  </div>
+                  <div class="partner-card" data-aos="fade-up">
+                    <img src="https://seeklogo.com/images/I/ict-division-future-is-here-logo-512CF19AA7-seeklogo.com.png" alt="Bangladesh ICT Division" />
+                    <h3>Bangladesh ICT Division</h3>
+                    <p>Government Division</p>
+                  </div>
+                  <div class="partner-card" data-aos="fade-up">
+                      <img src="https://media.licdn.com/dms/image/v2/C560BAQEXQwpu-pEVrQ/company-logo_200_200/company-logo_200_200/0/1633688763637/idea_bangladesh_logo?e=2147483647&v=beta&t=HbwryD2oTj9lsyiXaR9JN2HYRvZ9WpCj0xb_rXa_mxA" alt="iDEA Innovations" />
+                      <h3>iDEA Innovations</h3>
+                      <p>Government Project</p>
+                  </div>
+                  <div class="partner-card" data-aos="fade-up">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnoi-KJkGTgj7B29VOnSkxfWw3lRhLkoUKEg&s" alt="Bangladesh Youth Leadership Center" />
+                      <h3>Bangladesh Youth Leadership Center</h3>
+                      <p>Online Learning Academy</p>
+                  </div>
+                  <div class="partner-card" data-aos="fade-up">
+                    <img src="https://yt3.googleusercontent.com/ytc/AIdro_kmsjs7L9AOWOUX-vhwVh3Ody05f6C9rrjcSTkAFsbDGg=s900-c-k-c0x00ffffff-no-rj" alt="Business Inspection BD" />
+                    <h3>Business Inspection BD</h3>
+                    <p>Digital Media Platform</p>
+                </div>
+                <div class="partner-card" data-aos="fade-up">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDTLgTvu-g88mJWdoHQvy3Vzk7jmbHfWfxtA&s" alt="BUET Career Club" />
+                    <h3>BUET Career Club</h3>
+                    <p>Make BUETians, to be more Careerist</p>
+                </div>
+                </div>
+              </section>
+            </div>
+        </div>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Client <span>Testimonials</span></h2>
+                <p>What our clients say about our career counseling services</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The career assessment was eye-opening. It helped me understand my strengths and guided me toward a career path I hadn't considered before but absolutely love now."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Faysal Ahmed">
+                            <div class="author-info">
+                                <h4>Faysal Ahmed</h4>
+                                <p>Product Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"After feeling stuck in my career for years, the counseling sessions gave me clarity and confidence to make a change. The personalized guidance was invaluable."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Farhana Pritti">
+                            <div class="author-info">
+                                <h4>Farhana Pritti</h4>
+                                <p>Software Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The resume building service transformed my job search. Within weeks of updating my resume, I received multiple interview calls from top companies in my industry."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Farhan Morshed">
+                            <div class="author-info">
+                                <h4>Farhan Morshed</h4>
+                                <p>Financial Analyst</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The interview preparation was thorough and practical. The mock interviews helped me identify my weaknesses and work on them. I aced my dream job interview!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Fariha Ahmed">
+                            <div class="author-info">
+                                <h4>Fariha Ahmed</h4>
+                                <p>Project Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="contact" class="cta-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Ready to Transform <span>Your Career</span>?</h2>
+            <p>Schedule a free 15-minute consultation with our career experts</p>
+        </div>
+
+        <div class="cta-container">
+            <div class="cta-info">
+                <div class="cta-header">
+                    <i class="fas fa-calendar"></i>
+                    <h3>Book Your Consultation</h3>
+                </div>
+                <p>Our career counselors are ready to help you navigate your professional journey. Fill out the form and we'll get back to you within 24 hours to schedule your free consultation.</p>
+                
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <p>Complete the contact form</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <p>Schedule your free consultation</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <p>Begin your career transformation</p>
+                    </div>
+                </div>
+
+                <div class="cta-features">
+                    <h4>What's included in your free consultation:</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Initial career assessment</li>
+                        <li><i class="fas fa-check"></i> Personalized service recommendations</li>
+                        <li><i class="fas fa-check"></i> Custom action plan preview</li>
+                        <li><i class="fas fa-check"></i> Q&A with a career expert</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cta-form">
+                <form id="consultationForm" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="ef446b67-e701-4383-9939-9a0f06f91e1a">
+
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="form-error" id="nameError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="form-error" id="emailError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                        <span class="form-error" id="phoneError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Service Interested In</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="career-assessment">Career Assessment</option>
+                            <option value="resume-building">Resume Building</option>
+                            <option value="interview-preparation">Interview Preparation</option>
+                            <option value="career-transition">Career Transition</option>
+                            <option value="education-planning">Education Planning</option>
+                            <option value="ongoing-coaching">Ongoing Coaching</option>
+                            <option value="networking-strategy">Networking Strategy</option>
+                            <option value="salary-negotiation">Salary Negotiation</option>
+                        </select>
+                        <span class="form-error" id="serviceError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experience">Your Available Time For The Consultation</label>
+                        <div class="range-slider-container">
+                            <input type="datetime-local" id="experience" name="experience" class="range-slider" required>
+                            <span class="range-value" id="experienceValue">15-min</span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Career Goals (Optional)</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter" checked>
+                        <label for="newsletter">Subscribe to our career newsletter</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">Request Consultation</button>
+                </form>
+
+                <div id="formSuccess" class="form-success">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Thank You!</h3>
+                    <p>Your consultation request has been submitted. We'll contact you within 24 hours to schedule your session.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in <span>Touch</span></h2>
+                <p>Schedule a consultation or send us your inquiries</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Our Location</h3>
+                            <p>Google for Startups, Shibuya, Tokyo, Japan</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p>ujjibonofficial@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>+880 1799685901</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Working Hours</h3>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="consultation-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="ef446b67-e701-4383-9939-9a0f06f91e1a">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="career-assessment">Career Assessment</option>
+                                <option value="counseling">One-on-One Counseling</option>
+                                <option value="resume">Resume Building</option>
+                                <option value="interview">Interview Preparation</option>
+                                <option value="education">Education Planning</option>
+                                <option value="advancement">Career Advancement</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="popup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <button id="close-popup" class="close-popup">&times;</button>
+            <img
+                src="https://i.postimg.cc/nhpW4VYG/pop-up.png"
+                class="popup-video"
+            >
+            <h2>Welcome to Our Website!</h2>
+            <p>Use The First Career AI of South Asia, Navigate Your Pathway Now.</p>
+            <button id="go-to-ai" class="btn primary-btn2">Go to AI Model</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo"> 
+                        <img src="UJJIBON Official Logo (white).png" alt="Ujjibon Logo">
+                    </div>
+                    <p>Your partner in professional growth and career development.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/ujjibonofficial" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/ujjibonofficial" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/ujjibon-%E0%A6%89%E0%A6%9C%E0%A7%8D%E0%A6%9C%E0%A7%80%E0%A6%AC%E0%A6%A8/?viewAsMember=true" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/ujjibon_official"><i class="fab fa-instagram" target="_blank"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="www.facebook.com" target="_blank">Courses</a></li>
+                        <li><a href="#assessment">Assessment</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="https://www.linkedin.com/in/faysal-ahmed-a7a62925b/" target="_blank">Developers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#services">Career Assessment</a></li>
+                        <li><a href="#services">One-on-One Counseling</a></li>
+                        <li><a href="#services">Resume Building</a></li>
+                        <li><a href="#services">Interview Preparation</a></li>
+                        <li><a href="#services">Education Planning</a></li>
+                        <li><a href="#services">Career Advancement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <p>Stay updated with our latest career tips and opportunities.</p>
+                    <form id="newsletter-form" action="" method="POST">
+                        <input type="hidden" name="access_key" value="">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn primary-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ujjibon. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <div class="chat-bot">
+        <div class="chat-bot-toggle">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="chat-bot-container">
+            <div class="chat-bot-header">
+                <h3>Career Assistant</h3>
+                <button class="close-chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-bot-messages" id="chat-messages">
+                <div class="message bot">
+                    <div class="message-content">
+                        <p>Hello! I'm your Career Assistant. How can I help you today?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-bot-input">
+                <input type="text" id="chat-input" placeholder="Type your question here...">
+                <button id="send-message"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> -->
+</html>
